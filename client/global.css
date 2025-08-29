@@ -1,0 +1,243 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /**
+   * New 3-Color Agricultural Design System
+   * Dark Green #5BCC6D, Light Green #B6E460, Purple #D6C4FF
+   */
+  :root {
+    /* Light Mode Colors - New Green Theme */
+    --background: 210 33% 99%;        /* Very light grayish blue */
+    --foreground: 0 0% 0%;            /* Black text */
+    --primary: 134 43% 58%;           /* Dark Green (#5BCC6D) */
+    --primary-foreground: 0 0% 100%;  /* White */
+    --secondary: 80 66% 64%;          /* Light Green (#B6E460) */
+    --secondary-foreground: 0 0% 0%;  /* Black text */
+    --accent: 254 91% 89%;            /* Purple (#D6C4FF) */
+    --accent-foreground: 0 0% 0%;     /* Black text */
+
+    /* Card & Surface Colors */
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 0%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 0%;
+
+    /* Interactive States */
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215 16% 57%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 134 43% 58%; /* focus ring - primary dark green */
+
+    /* Status Colors */
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Updated verdant colors to match new green scheme */
+    --verdant-50: 134 43% 96%;
+    --verdant-100: 134 43% 90%;
+    --verdant-200: 134 43% 80%;
+    --verdant-300: 134 43% 68%;
+    --verdant-400: 134 43% 58%;  /* Dark Green Primary */
+    --verdant-500: 134 43% 50%;
+    --verdant-600: 134 43% 42%;
+    --verdant-700: 134 43% 34%;
+    --verdant-800: 134 43% 26%;
+    --verdant-900: 134 43% 18%;
+    --verdant-950: 134 43% 10%;
+  }
+
+  .dark {
+    /* Dark Mode Colors */
+    --background: 220 20% 10%;        /* Very dark blue-gray */
+    --foreground: 0 0% 98%;           /* Off-white */
+    --primary: 134 43% 58%;           /* Same dark green */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 80 66% 64%;          /* Same light green */
+    --secondary-foreground: 0 0% 0%;
+    --accent: 254 91% 89%;            /* Same purple */
+    --accent-foreground: 0 0% 0%;
+
+    --card: 224 71% 4%;
+    --card-foreground: 0 0% 98%;
+    --popover: 224 71% 4%;
+    --popover-foreground: 0 0% 98%;
+
+    --muted: 215 25% 18%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --border: 215 25% 18%;
+    --input: 215 25% 18%;
+    --ring: 134 43% 58%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+
+  /* Typography Hierarchy */
+  h1 {
+    @apply text-3xl md:text-4xl font-heading font-medium tracking-tight;
+  }
+
+  h2 {
+    @apply text-2xl md:text-3xl font-heading font-medium tracking-tight;
+  }
+
+  h3 {
+    @apply text-xl md:text-2xl font-heading font-medium tracking-tight;
+  }
+}
+
+@layer components {
+  /* Button System */
+  .btn-base {
+    @apply inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50;
+  }
+
+  /* Dashboard Cards */
+  .dashboard-card {
+    @apply bg-white rounded-xl shadow-card p-5 border border-border/50;
+  }
+
+  /* Interactive Card Effects */
+  .card-hover {
+    @apply hover:shadow-card-hover transition-all duration-300 ease-in-out transform hover:-translate-y-1;
+  }
+
+  /* Glass UI Effects */
+  .glass {
+    @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-glass;
+  }
+
+  .glass-hover {
+    @apply hover:shadow-glass-hover transition-shadow duration-300;
+  }
+
+  /* Navigation Components */
+  .nav-link {
+    @apply relative px-3 py-2 text-foreground/80 rounded-md transition-colors hover:text-foreground hover:bg-muted;
+  }
+
+  .nav-link.active {
+    @apply text-primary font-medium bg-primary/10;
+  }
+
+  /* Logo Styling */
+  .logo-text {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+    letter-spacing: -0.04em;
+  }
+
+  /* Utility Classes */
+  .center {
+    @apply flex items-center justify-center;
+  }
+
+  /* Green Gradient Text */
+  .text-gradient {
+    background: linear-gradient(to right, #5BCC6D, #B6E460);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  /* Purple Gradient for Accent Elements */
+  .text-gradient-purple {
+    background: linear-gradient(to right, #D6C4FF, #B29DFF);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  /* Green Border with Light Fill Style */
+  .green-border-style {
+    @apply border-agri-primary bg-agri-secondary/10 text-agri-primary;
+  }
+
+  /* Animation Classes */
+  .hover-lift {
+    @apply transition-transform duration-300 ease-out hover:-translate-y-1;
+  }
+
+  .interactive {
+    @apply transition-all duration-200 hover:brightness-105 active:brightness-95;
+  }
+
+  .page-transition {
+    @apply transition-all duration-300 ease-in-out;
+  }
+
+  /* Scrollbar Styling */
+  .custom-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: hsl(var(--primary) / 0.2) transparent;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: hsl(var(--primary) / 0.2);
+    border-radius: 3px;
+  }
+
+  .custom-scrollbar:hover::-webkit-scrollbar-thumb {
+    background-color: hsl(var(--primary) / 0.3);
+  }
+
+  /* Drop Zone */
+  .drop-zone {
+    @apply border-2 border-dashed border-border rounded-lg p-4 text-center cursor-pointer transition-colors hover:border-primary/50 hover:bg-primary/5;
+  }
+
+  /* Stat Components */
+  .stat-card {
+    @apply dashboard-card flex flex-col justify-between;
+  }
+
+  .stat-value {
+    @apply text-2xl font-semibold text-foreground;
+  }
+
+  .stat-label {
+    @apply text-sm font-medium text-muted-foreground;
+  }
+}

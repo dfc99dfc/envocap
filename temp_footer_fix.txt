@@ -1,0 +1,4 @@
+<div className="max-w-4xl mx-auto">
+                <p className="text-2xl font-bold text-white" style={{marginBottom: '4px'}}>This is a sample report demonstrating ENVOCAP's capabilities.</p>
+                <p className="text-gray-300 leading-relaxed" style={{fontSize: '15px', lineHeight: '15px', margin: '-1px 0 32px'}}>For full functionality, regulatory updates, and continuous compliance monitoring, upgrade to ENVOCAP Pro.</p>
+              </div>
