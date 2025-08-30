@@ -188,7 +188,7 @@ CO₂ Emissions: +2.1 tCO₂
     <div className="min-h-screen bg-gradient-to-br from-agri-background via-white to-agri-primary/5">
       {/* Header */}
       <header className="container mx-auto px-4 py-6">
-        <nav className="flex items-center justify-between">
+        <nav className="flex flex-col sm:flex-row sm:items-center sm:justify-between space-y-4 sm:space-y-0">
           <Link to="/dashboard">
             <Button variant="outline" className="border-agri-primary/20 text-agri-primary hover:bg-agri-primary/10">
               Dashboard

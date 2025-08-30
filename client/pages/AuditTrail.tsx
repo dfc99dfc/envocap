@@ -254,7 +254,7 @@ export default function AuditTrail() {
       {/* Header */}
       <header className="container mx-auto px-4 py-6">
         <div className="max-w-7xl mx-auto">
-          <nav className="flex items-center justify-between">
+          <nav className="flex flex-col sm:flex-row sm:items-center sm:justify-between space-y-4 sm:space-y-0">
           <Link to="/">
             <Logo size="md" className="bg-white rounded-[10px] overflow-hidden p-2.5" />
           </Link>
