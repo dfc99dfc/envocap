@@ -191,7 +191,7 @@ export default function Dashboard() {
             </Link>
             <Link to="/onboarding">
               <Avatar className="cursor-pointer hover:ring-2 hover:ring-agri-primary/20 transition-all">
-                <AvatarImage src="https://cdn.builder.io/api/v1/image/assets%2Fdf2c5e12a17845a7ba13483fac72a40b%2Fbb2d7ee3d5bc4384bf0c8bcf71d07f74?format=webp&width=800" alt="User avatar" />
+                <AvatarImage src="https://cdn.builder.io/api/v1/image/assets%2Fdf2c5e12a17845a7ba13483fac72a40b%2Fa4ccea5dc54f4207833e22e4067769f3?format=webp&width=800" alt="User avatar" />
                 <AvatarFallback className="bg-agri-primary text-white font-medium">JD</AvatarFallback>
               </Avatar>
             </Link>
@@ -284,7 +284,7 @@ export default function Dashboard() {
             {/* Main Charts Section */}
             <div className="lg:col-span-2 space-y-8">
               {/* Emissions Trend Chart */}
-              <Card className="dashboard-card border-0 bg-white md:bg-white/90 md:backdrop-blur-sm overflow-visible">
+              <Card className="dashboard-card border-0 bg-white/90 backdrop-blur-sm">
                 <CardHeader className="pb-4">
                   <CardTitle className="flex items-center justify-between">
                     <div className="flex items-center space-x-3">
@@ -304,7 +304,7 @@ export default function Dashboard() {
                 <CardContent className="pt-0">
                   <div className="space-y-6">
                     {/* Chart Container */}
-                    <div className="relative bg-gradient-to-br from-agri-background/50 to-white p-3 rounded-xl border border-agri-primary/10 overflow-visible pb-6">
+                    <div className="relative bg-gradient-to-br from-agri-background/50 to-white p-3 rounded-xl border border-agri-primary/10">
                       {/* Chart Header */}
                       <div className="flex items-center justify-between mb-6">
                         <div className="flex items-center space-x-4">
@@ -510,7 +510,7 @@ export default function Dashboard() {
               </Card>
 
               {/* ESG Metrics Breakdown */}
-              <Card className="dashboard-card border-0 bg-white md:bg-white/90 md:backdrop-blur-sm overflow-visible">
+              <Card className="dashboard-card border-0 bg-white/90 backdrop-blur-sm">
                 <CardHeader>
                   <CardTitle className="text-agri-text">ESG Metrics Overview</CardTitle>
                 </CardHeader>
@@ -634,7 +634,7 @@ export default function Dashboard() {
               </Card>
 
               {/* Data Sources & Upload Impact */}
-              <Card className="dashboard-card border-0 bg-white md:bg-white/90 md:backdrop-blur-sm overflow-visible">
+              <Card className="dashboard-card border-0 bg-white/90 backdrop-blur-sm">
                 <CardHeader>
                   <CardTitle className="flex items-center space-x-2">
                     <div className="p-2 bg-gradient-to-br from-agri-accent to-agri-accent-dark rounded-lg">
@@ -686,7 +686,7 @@ export default function Dashboard() {
             {/* Sidebar */}
             <div className="space-y-6">
               {/* ESG Compliance Score */}
-              <Card className="dashboard-card border-0 bg-white md:bg-white/90 md:backdrop-blur-sm overflow-visible">
+              <Card className="dashboard-card border-0 bg-white/90 backdrop-blur-sm">
                 <CardHeader>
                   <CardTitle className="flex items-center space-x-2">
                     <div className="p-2 bg-gradient-to-br from-agri-primary to-agri-primary-light rounded-lg">
@@ -748,7 +748,7 @@ export default function Dashboard() {
               </Card>
 
               {/* Goals & Targets */}
-              <Card className="dashboard-card border-0 bg-white md:bg-white/90 md:backdrop-blur-sm overflow-visible">
+              <Card className="dashboard-card border-0 bg-white/90 backdrop-blur-sm">
                 <CardHeader>
                   <CardTitle className="flex items-center space-x-2">
                     <div className="p-2 bg-gradient-to-br from-agri-accent to-agri-accent-dark rounded-lg">
@@ -787,7 +787,7 @@ export default function Dashboard() {
               </Card>
 
               {/* Action Items */}
-              <Card className="border-agri-warning/30 bg-agri-warning/5 overflow-visible">
+              <Card className="border-agri-warning/30 bg-agri-warning/5">
                 <CardHeader>
                   <CardTitle className="flex items-center space-x-2 text-agri-warning">
                     <AlertTriangle className="h-5 w-5" />
@@ -813,7 +813,7 @@ export default function Dashboard() {
               </Card>
 
               {/* Quick Actions */}
-              <Card className="bg-gradient-to-br from-agri-primary to-agri-primary-dark text-white shadow-lg overflow-visible">
+              <Card className="bg-gradient-to-br from-agri-primary to-agri-primary-dark text-white shadow-lg">
                 <CardContent className="p-2 space-y-4">
                   <h3 className="font-heading font-semibold text-lg">Quick Actions</h3>
                   <div className="space-y-3">

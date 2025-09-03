@@ -270,7 +270,7 @@ export default function AuditTrail() {
             </Link>
             <Link to="/onboarding">
               <Avatar className="cursor-pointer hover:ring-2 hover:ring-agri-primary/20 transition-all">
-                <AvatarImage src="https://cdn.builder.io/api/v1/image/assets%2Fdf2c5e12a17845a7ba13483fac72a40b%2Fbb2d7ee3d5bc4384bf0c8bcf71d07f74?format=webp&width=800" alt="User avatar" />
+                <AvatarImage src="https://cdn.builder.io/api/v1/image/assets%2Fdf2c5e12a17845a7ba13483fac72a40b%2Fa4ccea5dc54f4207833e22e4067769f3?format=webp&width=800" alt="User avatar" />
                 <AvatarFallback className="bg-agri-primary text-white font-medium">JD</AvatarFallback>
               </Avatar>
             </Link>
